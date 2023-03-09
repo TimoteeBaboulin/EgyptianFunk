@@ -22,6 +22,12 @@ public class TimoteePlayer : MonoBehaviour, IActor{
     void Update(){
         if (Input.GetButton("Horizontal") || Input.GetButton("Vertical"))
             Move();
+        if (Input.GetButtonDown("Interact")){
+            Debug.Log("E");
+            if (!_interact.Interact(this)){
+                Debug.Log("No interactable found");
+            }
+        }
     }
 
     private void Move(){
@@ -31,6 +37,8 @@ public class TimoteePlayer : MonoBehaviour, IActor{
         var movement = _cameraTransform.forward * vertical + _cameraTransform.right * horizontal;
         movement.y = 0;
         _controller.Move(movement.normalized * (Time.deltaTime * _speed));
+
+        
     }
 
     private void Interact(){

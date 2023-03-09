@@ -2,6 +2,6 @@
 
 public interface IInteractable{
     public GameObject GameObject{ get; }
-    
-    public void Interact(IActor user);
+
+    public bool Interact(IActor user);
 }

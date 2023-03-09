@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,7 +14,11 @@ public class InteractHitbox : MonoBehaviour{
         var interactable = other.GetComponent<IInteractable>();
         
         if (interactable == null) return;
+        
+        if (_selected != null)
+            _selected.GameObject.layer = LayerMask.NameToLayer("Default");
 
+        _selected = interactable;
         Selected.GameObject.layer = LayerMask.NameToLayer("Interactable");
         _interactables.Add(interactable);
     }
@@ -21,7 +26,29 @@ public class InteractHitbox : MonoBehaviour{
     private void OnTriggerExit(Collider other){
         var interactable = other.GetComponent<IInteractable>();
         
-        if (interactable != null)
-            _interactables.Remove(interactable);
+        if (interactable == null) return;
+
+        _interactables.Remove(interactable);
+        if (interactable != _selected) return;
+        
+        _selected.GameObject.layer = LayerMask.NameToLayer("Default");
+        _selected = _interactables.Count == 0 ? null : _interactables[Index.End];
+    }
+
+    public bool Interact(IActor player){
+        if (_selected == null) return false;
+
+        if (_selected.Interact(player)){
+            _interactables.Remove(_selected);
+            if (_interactables.Count == 0){
+                _selected = null;
+            }
+            else{
+                _selected = _interactables[^1];
+                _selected.GameObject.layer = LayerMask.NameToLayer("Interactable");
+            }
+            
+        }
+        return true;
     }
 }
