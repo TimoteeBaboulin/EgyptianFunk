@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb5c9f82411a411aac6a1d11e6bd32cf, type: 3}
+  m_Name: Test Dialogue 1
+  m_EditorClassIdentifier: 
+  IsQuestion: 0
+  CharacterName: Archeologue
+  Side: 0
+  Lines:
+  - Bonjour
+  - Je suis l'archeologue
+  - La heroine de ce jeu
+  - Et ceci est un dialogue de Test
+  IsLineAnswer: 00000000
+  NextDialogue:
+  - {fileID: 0}
