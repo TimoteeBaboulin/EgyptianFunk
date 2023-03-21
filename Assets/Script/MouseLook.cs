@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Cinemachine.Utility;
+using Timotee.Scripts.Player;
 using UnityEngine;
 using UnityEngine.VFX;
 using UnityEngine.XR;
@@ -12,11 +13,10 @@ public class MouseLook : MonoBehaviour
     public Transform playerBody;
     public Transform camFocus;
     
-    void Start() {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
-    }
+    public bool IsPaused;
+
     void Update() {
+        if (IsPaused) return;
         if ( Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f) {
             ChangeRotation();
         }

@@ -5,8 +5,7 @@ using System.ComponentModel.Design;
 using Cinemachine;
 using UnityEngine;
 
-public class PlayeringMovement : MonoBehaviour
-{
+public class PlayeringMovement : MonoBehaviour{
     public CharacterController controller;
 
     [Header("vitesse déplacemnt")]
@@ -23,14 +22,16 @@ public class PlayeringMovement : MonoBehaviour
     public Transform playerbodyControl;
     public Vector3 _velocity;
     public bool _isGrounded;
+
+    public bool IsPaused;
     
     private void Start() {
         speed = walk;
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
     }
-    
-    public void Mouvement() {
+
+    private void Movement() {
+        if (IsPaused) return;
+        
         _isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
         if (_isGrounded && _velocity.y < 0) _velocity.y = -2f;
 
@@ -38,11 +39,11 @@ public class PlayeringMovement : MonoBehaviour
         float z = Input.GetAxis("Vertical");
         
         Vector3 move = transform.right * x + transform.forward * z;
-        controller.Move(move * speed * Time.deltaTime);
+        controller.Move(move * (speed * Time.deltaTime));
     }
     
     void Update() {
-        Mouvement();
+        Movement();
         speed = walk;
     }
 }

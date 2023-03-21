@@ -1,10 +1,17 @@
+using Timotee.Scripts.Player;
 using UnityEngine;
 
 public class DialogueTester : MonoBehaviour{
     [SerializeField] private Dialogue _dialogue;
     
-    private void Start(){
-        Debug.Log(UIDialogueWriter.Instance);
+    [ContextMenu("Start Dialogue")]
+    private void StartDialogue(){
         UIDialogueWriter.Instance.StartDialogue(_dialogue);
+        GameManager.StartPause();
+    }
+
+    private void Update(){
+        if (Input.GetButtonDown("Fire1"))
+            UIDialogueWriter.Instance.Next();
     }
 }

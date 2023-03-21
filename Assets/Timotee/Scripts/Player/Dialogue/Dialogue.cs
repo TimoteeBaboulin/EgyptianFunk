@@ -12,3 +12,8 @@ public class Dialogue : ScriptableObject{
 
     public Dialogue[] NextDialogue;
 }
+
+public enum DialogueSide{
+    Left = 0,
+    Right = 1
+}

@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb5c9f82411a411aac6a1d11e6bd32cf, type: 3}
-  m_Name: Test Dialogue 1
+  m_Name: Test Dialogue 3
   m_EditorClassIdentifier: 
   IsQuestion: 0
-  CharacterName: Archeologue
-  Side: 0
+  CharacterName: Maman
+  Side: 1
   Lines:
-  - Bonjour
-  - Je suis l'archeologue
-  - La heroine de ce jeu
-  - Et ceci est un dialogue de Test
+  - "Voyons voir si on a chang\xE9 de nom"
+  - Voyons voir
+  - Si ca marche
+  - Ou pas
   IsLineAnswer: 00000000
   NextDialogue:
-  - {fileID: 11400000, guid: cbca722ebc7925e40a9615dad2a43e4c, type: 2}
+  - {fileID: 11400000, guid: a264825d097398243b05031d21fcf20d, type: 2}
