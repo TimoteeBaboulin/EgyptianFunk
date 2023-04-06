@@ -45,5 +45,8 @@ public class PlayeringMovement : MonoBehaviour{
     void Update() {
         Movement();
         speed = walk;
+        
+        _velocity.y += gravity * Time.deltaTime;
+        controller.Move(_velocity * Time.deltaTime);
     }
 }
