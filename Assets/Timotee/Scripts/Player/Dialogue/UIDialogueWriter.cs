@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class UIDialogueWriter : MonoBehaviour{
     public static UIDialogueWriter Instance;
 
+    [SerializeField] private GameObject _dialogueUiParent;
+    
     [Header("Writing Settings")] 
     [SerializeField] private float _writingSpeed;
     
@@ -38,18 +40,27 @@ public class UIDialogueWriter : MonoBehaviour{
         Instance = this;
     }
 
+    private void Update(){
+        if (Input.GetButtonDown("Fire1") && _dialogue != null)
+            Next();
+    }
     public void StartDialogue(Dialogue dialogue){
         if (dialogue == null){
             EndDialogues();
             return;
         }
         
+        if (!_dialogueUiParent.activeInHierarchy)
+            _dialogueUiParent.SetActive(true);
         if (_dialogue == null || _dialogue.CharacterName != dialogue.CharacterName){
             ushort id = (ushort) dialogue.Side;
             _names[id].text = dialogue.CharacterName;
             _nameSquares[id].color = _activeColor;
             _nameSquares[id == 0 ? 1 : 0].color = _inactiveColor;
         }
+
+        if (dialogue.ItemEarned != null)
+            TimoteePlayer.CurrentPlayer.Inventory.AddItem(dialogue.ItemEarned);
         
         _dialogue = dialogue;
 
@@ -126,6 +137,7 @@ public class UIDialogueWriter : MonoBehaviour{
     }
 
     public void Next(){
+        if (_dialogue == null) return;
         if (_isRunning){
             _isRunning = false;
             return;

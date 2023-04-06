@@ -1,8 +1,17 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
-public class TimoteePlayer : MonoBehaviour, IActor{
+public class TimoteePlayer : MonoBehaviour, IActor
+{
+    public static TimoteePlayer CurrentPlayer;
+
+    private Dictionary<Item, GameObject> _items = new();
+
+    [SerializeField] private GameObject _inventoryParent;
+    [SerializeField] private GameObject _itemPrefab;
+    
     public PlayerInventory Inventory => _inventory;
     [SerializeField] private PlayerInventory _inventory = new();
 
@@ -17,11 +26,21 @@ public class TimoteePlayer : MonoBehaviour, IActor{
     private void Start(){
         _controller = GetComponent<CharacterController>();
         _cameraTransform = Camera.main.transform;
+        if (CurrentPlayer != null) Destroy(gameObject);
+        else CurrentPlayer = this;
+    }
+
+    private void OnEnable()
+    {
+        _inventory.OnInventoryChanged += HandleItems;
+    }
+
+    private void OnDisable()
+    {
+        _inventory.OnInventoryChanged -= HandleItems;
     }
 
     void Update(){
-        if (Input.GetButton("Horizontal") || Input.GetButton("Vertical"))
-            Move();
         if (Input.GetButtonDown("Interact")){
             Debug.Log("E");
             if (!_interact.Interact(this)){
@@ -45,5 +64,20 @@ public class TimoteePlayer : MonoBehaviour, IActor{
         if (_interact == null || _interact.Interactables.Count == 0) return;
         
         _interact.Interactables[0].Interact(this);
+    }
+
+    private void HandleItems(Item item, bool isOwned)
+    {
+        if (isOwned)
+        {
+            GameObject newItem = Instantiate(_itemPrefab, _inventoryParent.transform);
+
+            _items.Add(item, newItem);
+        }
+        else
+        {
+            Destroy(_items[item]);
+            _items.Remove(item);
+        }
     }
 }

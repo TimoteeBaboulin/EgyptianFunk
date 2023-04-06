@@ -3,9 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
 using Cinemachine;
+using Timotee.Scripts.Player;
 using UnityEngine;
 
-public class PlayeringMovement : MonoBehaviour{
+public class PlayerMovement : MonoBehaviour{
     public CharacterController controller;
 
     [Header("vitesse déplacemnt")]

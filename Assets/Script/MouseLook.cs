@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using Cinemachine.Utility;
 using Timotee.Scripts.Player;
 using UnityEngine;
@@ -8,8 +9,8 @@ using UnityEngine.XR;
 
 public class MouseLook : MonoBehaviour
 {
-    [SerializeField] private PlayeringMovement playermovement;
-    
+    [SerializeField] private PlayerMovement playermovement;
+
     public Transform playerBody;
     public Transform camFocus;
     

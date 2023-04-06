@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 022f84a32c444ad2a3a24887445833d9, type: 3}
   m_Name: Urn Neith
   m_EditorClassIdentifier: 
-  _sprite: {fileID: -411972850, guid: b1f6238094ac39648b133e18369ab2cc, type: 3}
+  _sprite: {fileID: 2061371666, guid: b1f6238094ac39648b133e18369ab2cc, type: 3}
   _name: Neith Urn

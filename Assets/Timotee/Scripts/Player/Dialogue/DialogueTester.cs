@@ -10,8 +10,5 @@ public class DialogueTester : MonoBehaviour{
         GameManager.StartPause();
     }
 
-    private void Update(){
-        if (Input.GetButtonDown("Fire1"))
-            UIDialogueWriter.Instance.Next();
-    }
+    
 }

@@ -1,13 +1,16 @@
-﻿using Timotee.Scripts.Player;
+﻿using Cinemachine;
+using Timotee.Scripts.Player;
 using UnityEngine;
 
-public class Player : MonoBehaviour{
-    [SerializeField] private PlayeringMovement _movementScript;
+public class Player : MonoBehaviour {
+
+    [SerializeField] private PlayerMovement _movementScript;
     [SerializeField] private MouseLook _cameraMovementScript;
+    [SerializeField] private CinemachineVirtualCamera _vcam;
 
     private bool _isPaused = false;
 
-    private void Awake(){
+    private void Awake() {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -34,5 +37,6 @@ public class Player : MonoBehaviour{
 
         _movementScript.IsPaused = paused;
         _cameraMovementScript.IsPaused = paused;
+        _vcam.gameObject.SetActive(!paused);
     }
 }

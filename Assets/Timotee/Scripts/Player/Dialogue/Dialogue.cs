@@ -1,7 +1,8 @@
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Create Dialogue", fileName = "Dialogue", order = 0)]
-public class Dialogue : ScriptableObject{
+public class Dialogue : ScriptableObject {
+    public Item ItemEarned;
     public bool IsQuestion;
 
     public string CharacterName;
