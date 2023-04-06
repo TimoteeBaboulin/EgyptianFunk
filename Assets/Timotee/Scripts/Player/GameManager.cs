@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEngine;
 
 namespace Timotee.Scripts.Player{
     public static class GameManager{
