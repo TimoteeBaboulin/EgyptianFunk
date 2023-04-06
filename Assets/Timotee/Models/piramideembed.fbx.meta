@@ -1,0 +1,386 @@
+fileFormatVersion: 2
+guid: 035ad1b4cb5eb374b82dc8a79543a770
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cadreportehall_entrer
+    second: {fileID: 2100000, guid: 0076c15d6a5502b469c5dc9cddb39a37, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cadreportehall_genie
+    second: {fileID: 2100000, guid: f845ddac8cd2bfc4e89d00cf96756cb6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cadreportehall_genie3
+    second: {fileID: 2100000, guid: ea80877d02209254fa0481982be84a2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cadreportehall_momie1
+    second: {fileID: 2100000, guid: 64306b53c0437f64fa56265cc3b6d521, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cadreportehall_sphynx
+    second: {fileID: 2100000, guid: bc4d31bee15f22c48a2210ee8dbf57a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cadreportesalle_sphynx
+    second: {fileID: 2100000, guid: 367c73acca4e00c4d84b2682ec6fa7f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: debut_escalier
+    second: {fileID: 2100000, guid: be9ea631023c5004aac695883004d451, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "entr\xE9e"
+    second: {fileID: 2100000, guid: 34f314ded4c7b384ab09123822c0fadf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: escalier2
+    second: {fileID: 2100000, guid: f4f00eee3a83aee4dbe38f6dfb9efaff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: escalier_trone1
+    second: {fileID: 2100000, guid: fd91986df33c1f847a55c3c838d6dbbe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: exterieur_pyramide
+    second: {fileID: 2100000, guid: da4b33ef7bc19a446b26c1ca52f50140, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 2fcb6006fe032b14dbc4e27869e001cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert56
+    second: {fileID: 2100000, guid: e8d5e6b0ca1415841ab87e1cec4e1ac3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert84
+    second: {fileID: 2100000, guid: a6c2070228d0d5f45a8fe1405c8bec7e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marche_vers_couloir1
+    second: {fileID: 2100000, guid: 6863c760a09eaed49b0d575b40c87d72, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mur2
+    second: {fileID: 2100000, guid: 40801429267f64745b220f67e16d0a78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mur_couloir11
+    second: {fileID: 2100000, guid: 7680317fc13288c46a55bebc80a59af4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mur_couloir22
+    second: {fileID: 2100000, guid: 6d219016c553cf6468475676eb1b5aa8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mur_couloir_interieur
+    second: {fileID: 2100000, guid: 5c8a15871c03db149a81557fd6adcc00, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "mur_entr\xE9e"
+    second: {fileID: 2100000, guid: b9efeadd0d2961a4bb3626a10b228ada, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mur_escalier
+    second: {fileID: 2100000, guid: bca74175cbefdc64c9dcddd4d6af0b9b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mur_interieur_salle_sphynx
+    second: {fileID: 2100000, guid: 7e058c42b5178df4dbc5d038705fd264, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mur_interieur_salle_sphynx2
+    second: {fileID: 2100000, guid: 12cf6b9b0361fe340b1e7115596ae7d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mur_salle_genie
+    second: {fileID: 2100000, guid: 236b6329f6b67d94fb2ac8566468fc67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mur_salle_interieur_momie2
+    second: {fileID: 2100000, guid: 0f71b47d09686474d99ffcb7d4a766d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mur_salle_momie1
+    second: {fileID: 2100000, guid: 562b35e06ee8b2344b7a63909351d20b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mur_salle_momie2
+    second: {fileID: 2100000, guid: e3169ddd3b8749d44914c0158d54936a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mur_salle_momie_interieur1
+    second: {fileID: 2100000, guid: 443f144b0db38844180ab596c6fbd025, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mur_sallefond1
+    second: {fileID: 2100000, guid: 5f886e6daa8492c4eaa878ad681024cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mur_sallefond2
+    second: {fileID: 2100000, guid: 580475986c7c31e45b339a3912b94c93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mur_sallefond3
+    second: {fileID: 2100000, guid: b2055f9627a99be40833e1ed5b811c7b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mur_sallefond4
+    second: {fileID: 2100000, guid: 0fc3f1d05774e4044b0c094af9b82ba2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: murhall1
+    second: {fileID: 2100000, guid: 705df2b3c1ab9e5448fd021ffae0b740, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: murhall2
+    second: {fileID: 2100000, guid: 13e8c01a85452df44b8ba2d1fba43f46, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: murhall3
+    second: {fileID: 2100000, guid: 22ddd17e347c8f84ebc25d3408099024, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: murhall4
+    second: {fileID: 2100000, guid: 61da1d6d914e7ac41b710ad52e3469f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mursalle_sphynx
+    second: {fileID: 2100000, guid: dcc9096f112eca640a2dae0b86577742, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "pilonne_entr\xE9e"
+    second: {fileID: 2100000, guid: 15c760f8f908feb489a71309b268bf48, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plafond_couloir2
+    second: {fileID: 2100000, guid: 3fda850256fcdf046be8336c49e4312c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "plafond_entr\xE9e"
+    second: {fileID: 2100000, guid: 259a83edc81530944b88341311a1d3de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plafond_escalier
+    second: {fileID: 2100000, guid: deefb48eb5428de4ba01bdedaf4e10d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plafond_hall
+    second: {fileID: 2100000, guid: d402b805a74cda34b802e571e5752013, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plafond_sallefond1
+    second: {fileID: 2100000, guid: 8b276cd5c61f8bd459ec2cb6ab90c788, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plafond_sallesphynx1
+    second: {fileID: 2100000, guid: b7f6a5b7f0617fd4d910095342aff553, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: porte1
+    second: {fileID: 2100000, guid: 10f02dd1ada5bb0459d0f7df0cabb9ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pyramide1
+    second: {fileID: 2100000, guid: fbdc4dfd8c6fa5e4b88a3fa21b3b0041, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sable
+    second: {fileID: 2100000, guid: 238373365b786414f9f4e27613819fc7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sable_outside
+    second: {fileID: 2100000, guid: 352ab7f84dd408440b31134e38ad3af1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sol_couloir1
+    second: {fileID: 2100000, guid: 55e519b1898c3c64292bf668dd020073, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sol_couloir2
+    second: {fileID: 2100000, guid: 4de2963bf2161054cb9aab5bcb5a7e78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sol_hall
+    second: {fileID: 2100000, guid: a550a9f17fa6e7f488833732d41fd7d9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sol_sallefond1
+    second: {fileID: 2100000, guid: 6e130419c0f060741a5cd17029560122, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sol_sallemomie
+    second: {fileID: 2100000, guid: 8d9e3d1ead96a6b4287857e3a621d4f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sol_sallesphynx1
+    second: {fileID: 2100000, guid: 99aad3905d5c164439454ec8f8b39df6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sol_sallesphynx2
+    second: {fileID: 2100000, guid: 17859f1f8f74f4f4bad79d0f13a1faf0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: solentrer_hall_1
+    second: {fileID: 2100000, guid: 6ab492b132b03a64285ae219b8262868, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 50
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 50
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
