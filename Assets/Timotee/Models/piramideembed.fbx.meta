@@ -193,7 +193,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: "pilonne_entr\xE9e"
-    second: {fileID: 2100000, guid: 15c760f8f908feb489a71309b268bf48, type: 2}
+    second: {fileID: 2100000, guid: 72e3fcaf8116ba14b8520cffffdd568d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -203,7 +203,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: "plafond_entr\xE9e"
-    second: {fileID: 2100000, guid: 259a83edc81530944b88341311a1d3de, type: 2}
+    second: {fileID: 2100000, guid: c217ef641c1482c4cab64f9ee538b753, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -283,7 +283,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: solentrer_hall_1
-    second: {fileID: 2100000, guid: 6ab492b132b03a64285ae219b8262868, type: 2}
+    second: {fileID: 2100000, guid: 9107aefd865988646b45301a6c112bf7, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
