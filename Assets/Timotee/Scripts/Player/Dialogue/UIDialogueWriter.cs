@@ -145,6 +145,11 @@ public class UIDialogueWriter : MonoBehaviour{
         
         if (_dialogue.IsQuestion)
             return;
+
+        if (_dialogue.NextDialogue == null || _dialogue.NextDialogue.Length == 0){
+            EndDialogues();
+            return;
+        }
         
         StartDialogue(_dialogue.NextDialogue[0]);
     }
@@ -166,5 +171,6 @@ public class UIDialogueWriter : MonoBehaviour{
         }
         
         GameManager.StopPause();
+        _dialogueUiParent.SetActive(false);
     }
 }
