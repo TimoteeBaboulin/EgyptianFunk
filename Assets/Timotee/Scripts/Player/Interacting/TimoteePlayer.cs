@@ -1,16 +1,17 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(CharacterController))]
 public class TimoteePlayer : MonoBehaviour, IActor
 {
     public static TimoteePlayer CurrentPlayer;
 
-    private Dictionary<Item, GameObject> _items = new();
+    private Dictionary<Item, ItemUI> _items = new();
 
     [SerializeField] private GameObject _inventoryParent;
-    [SerializeField] private GameObject _itemPrefab;
+    [SerializeField] private ItemUI _itemPrefab;
     
     public PlayerInventory Inventory => _inventory;
     [SerializeField] private PlayerInventory _inventory = new();
@@ -70,8 +71,8 @@ public class TimoteePlayer : MonoBehaviour, IActor
     {
         if (isOwned)
         {
-            GameObject newItem = Instantiate(_itemPrefab, _inventoryParent.transform);
-
+            ItemUI newItem = Instantiate(_itemPrefab, _inventoryParent.transform);
+            newItem.ItemSprite.sprite = item.Sprite;
             _items.Add(item, newItem);
         }
         else

@@ -12,6 +12,7 @@ public class Dialogue : ScriptableObject {
     public bool[] IsLineAnswer;
 
     public Dialogue[] NextDialogue;
+    public CharacterAudioProfile CharacterAudioProfile;
 }
 
 public enum DialogueSide{

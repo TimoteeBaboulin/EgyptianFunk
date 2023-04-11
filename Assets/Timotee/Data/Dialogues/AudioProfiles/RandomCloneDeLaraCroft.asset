@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da72a8344304224a327c034204541b6, type: 3}
+  m_Name: RandomCloneDeLaraCroft
+  m_EditorClassIdentifier: 
+  VoiceClips:
+  - {fileID: 8300000, guid: 62b505fe26bf2ca4683576c8416e6606, type: 3}
+  - {fileID: 8300000, guid: c042363570090414c9a54ade60cbc87d, type: 3}
+  - {fileID: 8300000, guid: bb5bd1b317121e14cb07edd452cc4b89, type: 3}
+  - {fileID: 8300000, guid: bdc5563998b92a04d9315610d270102d, type: 3}
+  - {fileID: 8300000, guid: 1b882e5bc72f9cb4283df6805d512298, type: 3}
+  - {fileID: 8300000, guid: 04fe8caa3e9bceb43ba4a05b60b576ac, type: 3}
+  - {fileID: 8300000, guid: 6a659bb1c3561494ca8d4358fc5f20a6, type: 3}
+  - {fileID: 8300000, guid: 63c198cf30865ce4dbbe792d61619a05, type: 3}
+  - {fileID: 8300000, guid: a27062dbe9a9e9d498f4d7c18a888e60, type: 3}
+  - {fileID: 8300000, guid: 56a7b30e823cc694dbf088dd9d979fd4, type: 3}

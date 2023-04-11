@@ -28,6 +28,10 @@ public class UIDialogueWriter : MonoBehaviour{
     [SerializeField] private DialogueNormalManager _normalLine;
     [SerializeField] private DialogueAnswerManager _answerLine;
 
+    [Header("Sounds")]
+    [SerializeField] private AudioSource _source;
+    [SerializeField] private float _audioSpeed;
+    
     public bool IsRunning => _isRunning;
     private bool _isRunning;
     private Coroutine _coroutine;
@@ -71,6 +75,7 @@ public class UIDialogueWriter : MonoBehaviour{
         ResetText();
 
         StartCoroutine(_dialogue.IsQuestion ? WriteQuestionDialogueCoroutine() : WriteNormalDialogueCoroutine());
+        StartCoroutine(TalkingSoundsCoroutine());
     }
     
     private IEnumerator WriteNormalDialogueCoroutine(){
@@ -134,6 +139,29 @@ public class UIDialogueWriter : MonoBehaviour{
         }
 
         _isRunning = false;
+    }
+
+    private IEnumerator TalkingSoundsCoroutine()
+    {
+        float timer = 0;
+        while (_isRunning)
+        {
+            timer += Time.deltaTime;
+            if (timer > 1 / _audioSpeed)
+            {
+                _source.clip = GetRandomClip();
+                _source.Play();
+                timer = 0;
+            }
+
+            yield return null;
+        }
+    }
+
+    private AudioClip GetRandomClip()
+    {
+        return _dialogue.CharacterAudioProfile.VoiceClips[
+            Random.Range(0, _dialogue.CharacterAudioProfile.VoiceClips.Length)];
     }
 
     public void Next(){

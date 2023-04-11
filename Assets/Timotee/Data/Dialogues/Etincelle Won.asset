@@ -23,3 +23,5 @@ MonoBehaviour:
   - "'Sp\xE8ce de con"
   IsLineAnswer: 
   NextDialogue: []
+  CharacterAudioProfile: {fileID: 11400000, guid: ae7493b9e63e7e04d9dad8f09fea965a,
+    type: 2}
