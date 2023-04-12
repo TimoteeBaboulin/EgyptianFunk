@@ -18,9 +18,9 @@ public class MouseLook : MonoBehaviour
 
     void Update() {
         if (IsPaused) return;
-        if ( Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f) {
-            ChangeRotation();
-        }
+        // if ( Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f) {
+        //     ChangeRotation();
+        // }
     } 
     
     private void ChangeRotation() {

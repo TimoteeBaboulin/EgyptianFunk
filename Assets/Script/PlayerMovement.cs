@@ -24,10 +24,17 @@ public class PlayerMovement : MonoBehaviour{
     public Vector3 _velocity;
     public bool _isGrounded;
 
+
+    [SerializeField] private Camera _camera;
+    private Animator _animator;
+
     public bool IsPaused;
     
-    private void Start() {
+    private void Start()
+    {
+        _animator = GetComponentInChildren<Animator>();
         speed = walk;
+        GameManager.OnPause += b => { _animator.speed = b == true ? 0 : 1; };
     }
 
     private void Movement() {
@@ -38,9 +45,13 @@ public class PlayerMovement : MonoBehaviour{
 
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
+
+        _animator.SetFloat("Movement", Math.Abs(x) + Math.Abs(z));
         
-        Vector3 move = transform.right * x + transform.forward * z;
+        Vector3 move = _camera.transform.right * x + _camera.transform.forward * z;
+        move.y = 0;
         controller.Move(move * (speed * Time.deltaTime));
+        transform.LookAt(transform.position + move);
     }
     
     void Update() {
@@ -49,5 +60,6 @@ public class PlayerMovement : MonoBehaviour{
         
         _velocity.y += gravity * Time.deltaTime;
         controller.Move(_velocity * Time.deltaTime);
+        
     }
 }

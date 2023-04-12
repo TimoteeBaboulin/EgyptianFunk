@@ -32,7 +32,8 @@ public class InteractHitbox : MonoBehaviour{
         if (interactable != _selected) return;
         
         _selected.GameObject.layer = LayerMask.NameToLayer("Default");
-        _selected = _interactables.Count == 0 ? null : _interactables[Index.End];
+        Debug.Log(_interactables.Count);
+        _selected = _interactables.Count == 0 ? null : _interactables[^1];
     }
 
     public bool Interact(IActor player){
@@ -40,6 +41,7 @@ public class InteractHitbox : MonoBehaviour{
 
         if (_selected.Interact(player)){
             _interactables.Remove(_selected);
+            _selected.GameObject.layer = LayerMask.NameToLayer("Default");
             if (_interactables.Count == 0){
                 _selected = null;
             }

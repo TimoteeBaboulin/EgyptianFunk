@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da72a8344304224a327c034204541b6, type: 3}
   m_Name: RandomCloneDeLaraCroft
   m_EditorClassIdentifier: 
+  AudioSpeed: 7.5
   VoiceClips:
   - {fileID: 8300000, guid: 62b505fe26bf2ca4683576c8416e6606, type: 3}
   - {fileID: 8300000, guid: c042363570090414c9a54ade60cbc87d, type: 3}
-  - {fileID: 8300000, guid: bb5bd1b317121e14cb07edd452cc4b89, type: 3}
   - {fileID: 8300000, guid: bdc5563998b92a04d9315610d270102d, type: 3}
   - {fileID: 8300000, guid: 1b882e5bc72f9cb4283df6805d512298, type: 3}
   - {fileID: 8300000, guid: 04fe8caa3e9bceb43ba4a05b60b576ac, type: 3}

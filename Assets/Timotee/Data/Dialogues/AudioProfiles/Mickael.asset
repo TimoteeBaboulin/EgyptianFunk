@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da72a8344304224a327c034204541b6, type: 3}
   m_Name: Mickael
   m_EditorClassIdentifier: 
+  AudioSpeed: 6.5
   VoiceClips:
   - {fileID: 8300000, guid: 6a39ba91957c4864facde49ca9c65723, type: 3}
   - {fileID: 8300000, guid: 701dc58a39b552d418983585c2a60237, type: 3}

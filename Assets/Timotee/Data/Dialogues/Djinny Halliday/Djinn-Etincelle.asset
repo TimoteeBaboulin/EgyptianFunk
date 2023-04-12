@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb5c9f82411a411aac6a1d11e6bd32cf, type: 3}
+  m_Name: Djinn-Etincelle
+  m_EditorClassIdentifier: 
+  ItemEarned: {fileID: 11400000, guid: b8036af7c10c5154d8467a9eb0362ee9, type: 2}
+  IsQuestion: 0
+  CharacterName: Djinny Halliday
+  Side: 1
+  Lines:
+  - "Non, mais j'ai mieux que \xE7a"
+  - Un briquet magique!
+  - Il permet d'ALLUMER LE FEU!!!
+  - ' '
+  IsLineAnswer: 
+  NextDialogue: []
+  CharacterAudioProfile: {fileID: 11400000, guid: ae7493b9e63e7e04d9dad8f09fea965a,
+    type: 2}

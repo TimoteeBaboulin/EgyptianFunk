@@ -49,6 +49,7 @@ public class UIDialogueWriter : MonoBehaviour{
             Next();
     }
     public void StartDialogue(Dialogue dialogue){
+        GameManager.StartPause();
         if (dialogue == null){
             EndDialogues();
             return;
@@ -83,6 +84,7 @@ public class UIDialogueWriter : MonoBehaviour{
         var lines = new DialogueNormalManager[4];
         for (int l = 0; l < _dialogue.Lines.Length; l++){
             lines[l] = Instantiate(_normalLine, _linesParent);
+            lines[l].text = " ";
         }
         
         for (int l = 0; l < _dialogue.Lines.Length; l++){
@@ -111,12 +113,13 @@ public class UIDialogueWriter : MonoBehaviour{
                 lines[l] = Instantiate(_answerLine, _linesParent);
             else
                 lines[l] = Instantiate(_normalLine, _linesParent);
+            lines[l].SetText(" ");
         }
         
         for (int l = 0; l < _dialogue.Lines.Length; l++){
             IDialogue line = lines[l];
             if (_dialogue.IsLineAnswer[l]){
-                line.SetText(_dialogue.Lines[l]);
+                line.SetText("* " + _dialogue.Lines[l]);
                 var nextDialogue = _dialogue.NextDialogue[l];
                 ((DialogueAnswerManager)line).OnClick += delegate{ StartDialogue(nextDialogue); };
                 
@@ -147,7 +150,7 @@ public class UIDialogueWriter : MonoBehaviour{
         while (_isRunning)
         {
             timer += Time.deltaTime;
-            if (timer > 1 / _audioSpeed)
+            if (timer > 1 / _dialogue.CharacterAudioProfile.AudioSpeed)
             {
                 _source.clip = GetRandomClip();
                 _source.Play();
@@ -164,7 +167,7 @@ public class UIDialogueWriter : MonoBehaviour{
             Random.Range(0, _dialogue.CharacterAudioProfile.VoiceClips.Length)];
     }
 
-    public void Next(){
+    private void Next(){
         if (_dialogue == null) return;
         if (_isRunning){
             _isRunning = false;
@@ -191,7 +194,7 @@ public class UIDialogueWriter : MonoBehaviour{
     private void EndDialogues(){
         ResetText();
         foreach (var name in _names){
-            name.text = "";
+            name.text = " ";
         }
 
         foreach (var square in _nameSquares){

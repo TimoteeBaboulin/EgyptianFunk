@@ -77,7 +77,7 @@ public class TimoteePlayer : MonoBehaviour, IActor
         }
         else
         {
-            Destroy(_items[item]);
+            Destroy(_items[item].gameObject);
             _items.Remove(item);
         }
     }

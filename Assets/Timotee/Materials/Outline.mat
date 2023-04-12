@@ -123,8 +123,8 @@ Material:
     - _ClearCoatSmoothness: 0
     - _ConservativeDepthOffsetEnable: 0
     - _Cull: 2
-    - _CullMode: 2
-    - _CullModeForward: 2
+    - _CullMode: 1
+    - _CullModeForward: 1
     - _Cutoff: 0.5
     - _DepthOffsetEnable: 0
     - _DetailAlbedoMapScale: 1
@@ -140,9 +140,9 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
-    - _OUTLINE_tHICKNESS: 2.08
+    - _OUTLINE_tHICKNESS: 2.85
     - _OcclusionStrength: 1
-    - _Offset: -0.39
+    - _Offset: -0.14
     - _OpaqueCullMode: 1
     - _Parallax: 0.005
     - _QueueControl: 1
@@ -172,9 +172,9 @@ Material:
     - _SupportDecals: 0
     - _Surface: 0
     - _SurfaceType: 1
-    - _Transition: 0.13
+    - _Transition: 0.17
     - _TransparentBackfaceEnable: 0
-    - _TransparentCullMode: 2
+    - _TransparentCullMode: 1
     - _TransparentDepthPostpassEnable: 0
     - _TransparentDepthPrepassEnable: 0
     - _TransparentSortPriority: -50

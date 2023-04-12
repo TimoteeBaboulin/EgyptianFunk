@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb5c9f82411a411aac6a1d11e6bd32cf, type: 3}
+  m_Name: Djinn-First
+  m_EditorClassIdentifier: 
+  ItemEarned: {fileID: 0}
+  IsQuestion: 1
+  CharacterName: Djinny Halliday
+  Side: 1
+  Lines:
+  - "Tiens, tiens, tiens... Voila une nouvelle t\xEAte"
+  - "Je me pr\xE9sente, je suis Djinny Halliday.   Et vous \xEAtes?"
+  - "Je ne suis qu'une simple arch\xE9ologue"
+  - Je m'appelle Emma Smet
+  IsLineAnswer: 00000101
+  NextDialogue:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 123f808a42e90b949b2dcf75a4833400, type: 2}
+  - {fileID: 11400000, guid: e88c3263aa778b5469b85e9b2a944f5b, type: 2}
+  CharacterAudioProfile: {fileID: 11400000, guid: ae7493b9e63e7e04d9dad8f09fea965a,
+    type: 2}

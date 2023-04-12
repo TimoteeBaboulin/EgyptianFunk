@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb5c9f82411a411aac6a1d11e6bd32cf, type: 3}
+  m_Name: Sphinx-First
+  m_EditorClassIdentifier: 
+  ItemEarned: {fileID: 0}
+  IsQuestion: 1
+  CharacterName: Sphi-hinx
+  Side: 1
+  Lines:
+  - "Arri\xE8re \xE9tranger!"
+  - "Ou ose me d\xE9fier, moi et mes \xE9nigmes que nul homme n'a su r\xE9soudre"
+  - "Tu es un sphinx \xE9gyptien, pas grec, tu me donnes pas d'\xE9nigmes"
+  - A bientot
+  IsLineAnswer: 00000101
+  NextDialogue:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  CharacterAudioProfile: {fileID: 11400000, guid: cd70f393da8c3a343a47a02824931a47,
+    type: 2}
