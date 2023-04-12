@@ -13,10 +13,19 @@ MonoBehaviour:
   m_Name: Sphinx-Enigme
   m_EditorClassIdentifier: 
   ItemEarned: {fileID: 0}
-  IsQuestion: 0
-  CharacterName: 
-  Side: 0
-  Lines: []
-  IsLineAnswer: 
-  NextDialogue: []
-  CharacterAudioProfile: {fileID: 0}
+  IsQuestion: 1
+  CharacterName: Sphi-hinx
+  Side: 1
+  Lines:
+  - Qui est Billie Jean?
+  - Pas mon amour !
+  - Pas mon amant !
+  - "Ton p\xE8re !"
+  IsLineAnswer: 00010101
+  NextDialogue:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 483ace6d1e972d14bbf3944362d9c633, type: 2}
+  - {fileID: 11400000, guid: 483ace6d1e972d14bbf3944362d9c633, type: 2}
+  - {fileID: 11400000, guid: 0c88b9fb184ba954dbad7e60a13cfba4, type: 2}
+  CharacterAudioProfile: {fileID: 11400000, guid: cd70f393da8c3a343a47a02824931a47,
+    type: 2}
