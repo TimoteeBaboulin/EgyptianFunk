@@ -25,7 +25,7 @@ MonoBehaviour:
   NextDialogue:
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: ffc85afe1b9aabd4d9bd0f5aeaef5577, type: 2}
   - {fileID: 0}
   CharacterAudioProfile: {fileID: 11400000, guid: cd70f393da8c3a343a47a02824931a47,
     type: 2}

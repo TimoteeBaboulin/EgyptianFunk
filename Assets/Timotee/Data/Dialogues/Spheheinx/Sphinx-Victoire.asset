@@ -10,22 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb5c9f82411a411aac6a1d11e6bd32cf, type: 3}
-  m_Name: Sphinx-Vener
+  m_Name: Sphinx-Victoire
   m_EditorClassIdentifier: 
   ItemEarned: {fileID: 0}
-  IsQuestion: 1
+  IsQuestion: 0
   CharacterName: Sphi-hinx
   Side: 1
   Lines:
-  - "COMMENT OSES-TU ESSAYER DE M'APPRENDRE MON M\xC9TIER!!!"
-  - "VERMINE! GOUJAT! M\xC9CHANT! ENFOIR\xC9!"
-  - "Je suis d\xE9sol\xE9, quelle est cette \xE9nigme?"
-  - Au revoir!
-  IsLineAnswer: 00000101
+  - "Bravo!!! Je suis impr\xE9ssion\xE9"
+  - "Cette \xE9nigme faisait partie des plus dures de mon r\xE9pertoire!"
+  - "(Non pas que j'en ait d'autres en t\xEAte en fait)"
+  - ' '
+  IsLineAnswer: 
   NextDialogue:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 11400000, guid: 961df97ff2446ac4f8b6e0626f9ae605, type: 2}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: fa64dce5f6be99747a13435ee6c64b05, type: 2}
   CharacterAudioProfile: {fileID: 11400000, guid: cd70f393da8c3a343a47a02824931a47,
     type: 2}

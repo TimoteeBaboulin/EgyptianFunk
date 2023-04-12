@@ -10,22 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb5c9f82411a411aac6a1d11e6bd32cf, type: 3}
-  m_Name: Sphinx-Vener
+  m_Name: Sphinx-Urne
   m_EditorClassIdentifier: 
-  ItemEarned: {fileID: 0}
-  IsQuestion: 1
+  ItemEarned: {fileID: 11400000, guid: 419bea8b5770035479dce2939ae00eee, type: 2}
+  IsQuestion: 0
   CharacterName: Sphi-hinx
   Side: 1
   Lines:
-  - "COMMENT OSES-TU ESSAYER DE M'APPRENDRE MON M\xC9TIER!!!"
-  - "VERMINE! GOUJAT! M\xC9CHANT! ENFOIR\xC9!"
-  - "Je suis d\xE9sol\xE9, quelle est cette \xE9nigme?"
-  - Au revoir!
-  IsLineAnswer: 00000101
-  NextDialogue:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 11400000, guid: 961df97ff2446ac4f8b6e0626f9ae605, type: 2}
-  - {fileID: 0}
+  - "Comme r\xE9compense, je t'offre..."
+  - "MON URNE SACR\xC9E!!!"
+  - Prends en bien soin.
+  - ' '
+  IsLineAnswer: 
+  NextDialogue: []
   CharacterAudioProfile: {fileID: 11400000, guid: cd70f393da8c3a343a47a02824931a47,
     type: 2}
