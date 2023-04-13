@@ -1,4 +1,5 @@
-﻿using Cinemachine;
+﻿using System;
+using Cinemachine;
 using Timotee.Scripts.Player;
 using UnityEngine;
 
@@ -8,11 +9,29 @@ public class Player : MonoBehaviour {
     [SerializeField] private MouseLook _cameraMovementScript;
     [SerializeField] private CinemachineVirtualCamera _vcam;
 
+    [SerializeField] private GameObject _pauseMenu;
+
     private bool _isPaused = false;
 
     private void Awake() {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    private void Update()
+    {
+        if (Input.GetButtonDown("Cancel")) {
+            if (_isPaused)
+            {
+                GameManager.StopPause();
+                _pauseMenu.SetActive(false);
+            }
+            else
+            {
+                GameManager.StartPause();
+                _pauseMenu.SetActive(true);
+            }
+        }
     }
 
     private void OnEnable(){

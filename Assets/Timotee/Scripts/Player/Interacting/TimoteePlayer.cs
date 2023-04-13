@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 [RequireComponent(typeof(CharacterController))]
 public class TimoteePlayer : MonoBehaviour, IActor
@@ -20,7 +21,11 @@ public class TimoteePlayer : MonoBehaviour, IActor
 
     [SerializeField] private InteractHitbox _interact;
     [SerializeField] private float _speed;
-    
+
+
+    [Header("Sounds")] 
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private AudioClip[] _stepSounds;
     private CharacterController _controller;
     private Transform _cameraTransform;
 
@@ -30,17 +35,14 @@ public class TimoteePlayer : MonoBehaviour, IActor
         if (CurrentPlayer != null) Destroy(gameObject);
         else CurrentPlayer = this;
     }
-
     private void OnEnable()
     {
         _inventory.OnInventoryChanged += HandleItems;
     }
-
     private void OnDisable()
     {
         _inventory.OnInventoryChanged -= HandleItems;
     }
-
     void Update(){
         if (Input.GetButtonDown("Interact")){
             Debug.Log("E");
@@ -50,6 +52,13 @@ public class TimoteePlayer : MonoBehaviour, IActor
         }
     }
 
+    public void StepSound()
+    {
+        AudioClip step = _stepSounds[Random.Range(0, _stepSounds.Length)];
+        _audioSource.clip = step;
+        _audioSource.Play();
+    }
+    
     private void Move(){
         var horizontal = Input.GetAxis("Horizontal");
         var vertical = Input.GetAxis("Vertical");
@@ -60,13 +69,11 @@ public class TimoteePlayer : MonoBehaviour, IActor
 
         
     }
-
     private void Interact(){
         if (_interact == null || _interact.Interactables.Count == 0) return;
         
         _interact.Interactables[0].Interact(this);
     }
-
     private void HandleItems(Item item, bool isOwned)
     {
         if (isOwned)

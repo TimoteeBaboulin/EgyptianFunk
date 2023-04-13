@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Emilien/Main Menu.unity
+    guid: 73160fbc78fa7854797d77d57b440df6
+  - enabled: 1
     path: Assets/Timotee/Scenes/TimoteeSceneInventory.unity
     guid: 5c4603446fb3da1448d806c9628a0e07
   m_configObjects: {}

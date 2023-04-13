@@ -19,7 +19,7 @@ MonoBehaviour:
   Lines:
   - Oh je vois
   - "Vous \xEAtes donc \xE0 la recherche d'un tr\xE9sor..."
-  - "Malheureusement, il n'y a plus grand chose du v\xE9ritable tr\xE9sor du capitaine."
+  - "Malheureusement, le v\xE9ritable tr\xE9sor du capitaine a fondu."
   - ' '
   IsLineAnswer: 
   NextDialogue:
