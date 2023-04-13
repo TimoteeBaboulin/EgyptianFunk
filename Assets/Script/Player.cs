@@ -21,16 +21,21 @@ public class Player : MonoBehaviour {
     private void Update()
     {
         if (Input.GetButtonDown("Cancel")) {
-            if (_isPaused)
-            {
-                GameManager.StopPause();
-                _pauseMenu.SetActive(false);
-            }
-            else
-            {
-                GameManager.StartPause();
-                _pauseMenu.SetActive(true);
-            }
+            Pause();
+        }
+    }
+
+    public void Pause()
+    {
+        if (_isPaused)
+        {
+            GameManager.StopPause();
+            _pauseMenu.SetActive(false);
+        }
+        else
+        {
+            GameManager.StartPause();
+            _pauseMenu.SetActive(true);
         }
     }
 
