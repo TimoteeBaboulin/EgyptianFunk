@@ -20,7 +20,7 @@ public class Player : MonoBehaviour {
 
     private void Update()
     {
-        if (Input.GetButtonDown("Cancel")) {
+        if (Input.GetKeyDown(KeyCode.Escape)) {
             Pause();
         }
     }
