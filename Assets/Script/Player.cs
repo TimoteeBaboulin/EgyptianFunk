@@ -1,6 +1,7 @@
 ﻿using System;
 using Cinemachine;
 using Timotee.Scripts.Player;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : MonoBehaviour {
@@ -11,7 +12,7 @@ public class Player : MonoBehaviour {
 
     [SerializeField] private GameObject _pauseMenu;
 
-    private bool _isPaused = false;
+    [SerializeField] private bool _isPaused = false;
 
     private void Awake() {
         Cursor.visible = false;
@@ -27,14 +28,19 @@ public class Player : MonoBehaviour {
 
     public void Pause()
     {
+        Debug.Log("Pause");
         if (_isPaused)
         {
+            Debug.Log("1");
             GameManager.StopPause();
+            Debug.Log("2");
             _pauseMenu.SetActive(false);
         }
         else
         {
+            Debug.Log("3");
             GameManager.StartPause();
+            Debug.Log("4");
             _pauseMenu.SetActive(true);
         }
     }

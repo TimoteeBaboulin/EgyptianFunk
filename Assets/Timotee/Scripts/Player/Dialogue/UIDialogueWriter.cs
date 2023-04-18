@@ -200,8 +200,10 @@ public class UIDialogueWriter : MonoBehaviour{
         foreach (var square in _nameSquares){
             square.color = Color.clear;
         }
-        
+
+        _dialogue = null;
         GameManager.StopPause();
+        
         _dialogueUiParent.SetActive(false);
     }
 }

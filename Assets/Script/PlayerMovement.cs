@@ -30,11 +30,21 @@ public class PlayerMovement : MonoBehaviour{
 
     public bool IsPaused;
     
-    private void Start()
+    private void OnEnable()
     {
         _animator = GetComponentInChildren<Animator>();
         speed = walk;
-        GameManager.OnPause += b => { _animator.speed = b == true ? 0 : 1; };
+        GameManager.OnPause += AnimatorPause;
+    }
+
+    private void OnDisable()
+    {
+        GameManager.OnPause -= AnimatorPause;
+    }
+
+    private void AnimatorPause(bool pause)
+    {
+        _animator.speed = pause == true ? 0 : 1; 
     }
 
     private void Movement() {

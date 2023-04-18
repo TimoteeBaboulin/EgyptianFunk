@@ -44,11 +44,9 @@ public class TimoteePlayer : MonoBehaviour, IActor
         _inventory.OnInventoryChanged -= HandleItems;
     }
     void Update(){
-        if (Input.GetButtonDown("Interact")){
-            Debug.Log("E");
-            if (!_interact.Interact(this)){
-                Debug.Log("No interactable found");
-            }
+        if (Input.GetButtonDown("Interact"))
+        {
+            _interact.Interact(this);
         }
     }
 
